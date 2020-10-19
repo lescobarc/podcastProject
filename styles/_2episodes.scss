@@ -1,0 +1,33 @@
+
+main{
+    #episodes {
+        width: 320px;
+        height: 1203.5px;
+        padding: 64px 11px 143.5px 11px;
+        background: linear-gradient( 225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+        h2{
+            width: 298px;
+            height: 63px;
+            padding-bottom: 21px;
+            padding-right: 136px;
+            margin:0;
+            @extend %font-episodes-mobile;
+            a{
+                width: 157px;
+                height: 42px;
+            }
+        }
+        .podcast{
+            display: grid;
+            grid-template-columns: 298px;
+            grid-template-rows: (225px 225px 225px 225px);
+            gap: 11px 0;   
+            .spotify{
+                width: 298px;
+                height: 225px;
+            }
+        }
+    }
+}
+

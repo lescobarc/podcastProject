@@ -1,0 +1,36 @@
+
+main{
+    #news{
+        height: 341px;
+        width: 320px;
+        padding-top: 64px;
+        padding-bottom: 67px;
+        clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+        background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        h2{
+            width: 288px;
+            height: 126px;
+            margin: 0 16px 36px 16px;
+            @extend %font-news-mobile;
+        }
+        .btn{
+            height: 48px;
+            width: 288px;
+            display: flex;
+            margin: 0 16px 0 16px;
+            a   {
+                width: 202px;
+                height: 22px;
+                margin:13px 43px 13px 43px ;
+                @extend %font-button-mobile;
+                text-decoration: none;
+                &:hover{
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+
+

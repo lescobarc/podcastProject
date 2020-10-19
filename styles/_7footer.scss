@@ -1,0 +1,40 @@
+footer{
+        width: 320px;
+        padding-top: 24px;
+        padding-bottom: 31px;
+        p{
+            width: 227px;
+            height: 22px;
+            margin: 0 46px 16px 47px;
+            @extend %font-p-mobile;
+        }
+        .social{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 45px 0 45px;
+            width: 230px;
+            height: 28px;
+            a{
+                width: 16px;
+                height: 28px;
+                i{
+                    width: 16px;
+                    height: 28px;
+                    padding: 5.5px 0;
+                }
+            }
+            a:not(:last-child){
+                margin-right: 38px;
+            }
+            a:nth-child(2) {
+                width: 14px;
+                height: 28px;
+                i{
+                width: 14px;
+                height: 28px;
+                }
+            }
+        }
+    }
+
+

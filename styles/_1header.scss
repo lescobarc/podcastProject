@@ -1,0 +1,148 @@
+Header{
+    width: 320px;
+    height: 347px;
+    margin: 0;
+    .logo{
+        width: 40px; 
+        height: 44px;
+        padding: 10px 0px 10px 16px;
+    }
+    nav{
+        display: inline;                 
+    } 
+    #menu{
+        display: none;   
+    }
+    #list{
+        display: none;
+        padding-left: 0;
+        width: 320px;
+        height: 224px;
+        margin: 0;
+        background: #0000EC;
+        li {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        &:nth-child(1){
+            margin-top: 16px;
+            }
+        a{
+            @extend %font-menu-mobile;
+            margin-left: 16px;
+            height: 28px;
+            text-decoration: none;
+            &:hover{
+                color: #00F3BB;
+                font-weight: 500;
+                text-decoration: line-through;
+            }
+            &:active{
+                color: rgba(6,10,36,0.56);
+            }
+        }
+        a.l-episodes{
+            width: 87px;
+            margin-right: 217px;
+            }
+        a.l-us{
+            width: 77px ;
+            margin-right: 227px;
+            }
+        a.l-interviews{
+            width: 106px;
+            margin-right: 198px;
+            }
+        a.l-topics{
+            width: 68px;
+            margin-right: 236px;
+            }
+        }
+    }
+    #menu:checked ~ * .fa-bars{
+        display: none;
+    }
+    #menu:not(:checked) ~ * .fa-times{
+        display: none;
+    }
+    #menu:checked + #list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+    label{
+        width: 18px;
+        height: 12px;
+        display: block;
+        float: right; 
+        cursor: pointer;
+        margin: 16px 19px 16px 0px;
+        padding: 0;
+    }
+    #introduction{
+        width: 288px;
+        height: 250px;
+        margin: 29px 16px 24px 16px;
+        h1{
+            box-sizing: inherit;
+            height: 100px;
+            width: 288px;
+            padding-bottom: 16px;
+            margin: 0;
+            @extend %font-h1-mobile;
+        }
+        span{
+            display: inline-block;
+            height: 42px;
+        }
+        .hello{
+            width: 85px;
+            }
+        .world{
+            width: 101px;
+            text-decoration: line-through;
+            }
+        .blue{
+            width: 212px;
+            }
+        .point{
+            width: 10px;
+            }
+        .p-mobile{
+            height: 102px;
+            width: 288px;
+            padding-bottom: 36px;
+            margin: 0;
+            @extend %font-p-mobile;
+        }
+        .p-desktop{
+            display: none;
+        }
+        .btn{
+            height: 48px;
+            width: 288px;
+            display: flex;
+            a   {
+                width: 288px;
+                height: 48px;
+                padding: 13px 96px;
+                text-decoration: none;
+                @extend %font-button-mobile;
+                &:hover{
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+    
+
+
+
+
+        
+ 

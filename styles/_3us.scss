@@ -1,0 +1,36 @@
+main{
+    #us{
+        display: flex;
+        flex-direction: column;
+        img{
+         width: 360px;
+         height: 519px;
+         margin: -95.5px -20px 0 -20px;
+         position: relative;
+        }
+        .img-phone{
+            height: 423.5px;
+        }
+        .article{
+            width: 320px;
+            height: 427px;
+            padding: 27px 16px 54px 16px;
+            h2{
+                width: 288px;
+                height: 84px;
+                margin-bottom: 8px;
+                margin-top: 0;
+                @extend %font-h2-mobile;
+            }
+            p{
+                width: 288px;
+                height: 254px;
+                margin:0;
+                @extend %font-p-mobile
+            }
+            span{
+                display: block;
+            }
+        }
+    }
+}

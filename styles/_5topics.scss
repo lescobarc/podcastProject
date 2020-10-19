@@ -1,0 +1,49 @@
+
+main{
+    #topics{
+        padding-bottom: 42px;
+        height: 970px;
+    h2{
+        display: flex;
+        text-align: start;
+        width: 288px;
+        height: 84px;
+        margin: 0 16px 24px 16px;
+        @extend %font-h2-mobile;
+    }
+    .icon{
+        display: flex;
+        flex-direction: column;
+        height: 680px;
+        width: 320px;
+       div{
+           height: 162px;
+           width: 320px;
+           margin-bottom: 36px;
+           img{
+               height: 104px;
+               width: 104px;
+               margin: 13px 108px 13px 108px;
+           }
+           p{ height: 32px;
+            width: 288px;
+            margin: 0 16px 0px 16px;
+            @extend %font-topics-mobile;
+           }
+        }
+        div:nth-child(2){
+            height: 194px;
+            margin-bottom: 52px;
+           p{ height: 64px;
+             }
+        }
+        div:nth-child(3){
+            margin-bottom: 52px;
+        }
+        div:nth-child(4){
+            margin-bottom: 42px;
+        }
+        }
+    }   
+}
+

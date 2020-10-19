@@ -1,0 +1,20 @@
+main{
+    #interviews{line-height: 0.15;
+        height: 1604px;
+        width: 320px;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        h2{
+            width: 288px;
+            height: 84px;
+            margin: 0 16px 14px 16px;
+            @extend %font-h2-mobile;
+        }
+        img{
+            width: 320px;
+            height: 243px;
+        }
+    }
+}
+
